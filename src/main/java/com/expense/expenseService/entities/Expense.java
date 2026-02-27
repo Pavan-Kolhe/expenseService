@@ -28,9 +28,11 @@ public class Expense {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @JsonProperty(value = "external_id")
     @Column(name = "external_id")
     private String externalId;
 
+    @JsonProperty(value = "user_id")
     @Column(name = "user_id")
     private String userId;
 
